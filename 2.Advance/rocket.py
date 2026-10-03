@@ -73,3 +73,9 @@ class Rocketboard:
         ab = (obj1.altitude - obj2.altitude) **2
         bc = (obj1.x - obj2.x) **2
         return sqrt(ab + bc)
+
+    def get_amount_of_rockets(self):
+        """you can use __len__ method to get the length of the list of rockets"""
+        return len(self.rockets)
+    def __len__(self):
+        return len(self.rockets)
